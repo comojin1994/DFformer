@@ -1,0 +1,28 @@
+### PATH ###
+CKPT_PATH: "/opt/pytorch/DFformer/checkpoints"
+DB_PATH: "/opt/pytorch/DFformer/databases"
+WEIGHT_PATH: null
+WEIGHT_FILENAME: null
+
+### SETTING ###
+SEED: 42
+GPU_NUM: "0"
+num_workers: 6
+
+### DATASET ###
+db_name: "BCIC2a"
+num_classes: 4
+num_subjects: 9
+train_subject_num: 8
+inter_information_length: 22 # num_channels
+origin_ival: [0, 1000]
+seq_len: 108
+
+### MANUAL ###
+EPOCHS: 100
+target_subject: 0
+target_session: null
+is_subject_independent: True
+use_token: False
+apply_cls_head: True
+model_name: "dfformer"

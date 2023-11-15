@@ -1,0 +1,18 @@
+version: "3"
+services:
+  torch-server:
+    container_name: dfformer
+    image: comojin1994/cu11.2-ubuntu-18.04-pytorch-1.10.0:0.8
+    restart: always
+    runtime: nvidia
+    ipc: host
+    volumes:
+      - /home/sungjin/Development:/opt/pytorch
+    devices:
+      - /dev/nvidia0:/dev/nvidia0
+      - /dev/nvidia1:/dev/nvidia1
+      - /dev/nvidia2:/dev/nvidia2
+      - /dev/nvidia-modeset:/dev/nvidia-modeset
+      - /dev/nvidia-uvm:/dev/nvidia-uvm
+      - /dev/nvidia-uvm-tools:/dev/nvidia-uvm-tools
+      - /dev/nvidiactl:/dev/nvinvidiactl

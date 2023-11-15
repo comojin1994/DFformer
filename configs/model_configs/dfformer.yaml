@@ -1,0 +1,63 @@
+SleepEDF:
+  lr: 0.0003
+
+  dim: &sleep_dim 64
+  nhead: 4
+  nlayer: 2
+
+  batch_size: 16
+  weight_decay: 0.075
+
+  cnn_layers:
+    [
+      [1, *sleep_dim, 125, 1],
+      [*sleep_dim, *sleep_dim, 8, 4],
+      [*sleep_dim, *sleep_dim, 4, 2],
+    ]
+
+SHHS:
+  lr: 0.0003
+
+  dim: &shhs_dim 64
+  nhead: 4
+  nlayer: 2
+
+  batch_size: 16
+  weight_decay: 0.075
+
+  cnn_layers:
+    [
+      [1, *shhs_dim, 125, 1],
+      [*shhs_dim, *shhs_dim, 8, 4],
+      [*shhs_dim, *shhs_dim, 4, 2],
+    ]
+
+BCIC2a:
+  lr: 0.003
+
+  dim: &mi_dim 64
+  nhead: 4
+  nlayer: 2
+
+  batch_size: 64
+  weight_decay: 0.5 #0.075
+
+  cnn_layers:
+    [[1, *mi_dim, 125, 1], [*mi_dim, *mi_dim, 8, 4], [*mi_dim, *mi_dim, 4, 2]]
+
+BCIC2b:
+  lr: 0.003 #0.00003
+
+  dim: &mi2_dim 64
+  nhead: 4 #4
+  nlayer: 2 #1
+
+  batch_size: 64
+  weight_decay: 0.5 #0.075
+
+  cnn_layers:
+    [
+      [1, *mi2_dim, 125, 1],
+      [*mi2_dim, *mi2_dim, 8, 4],
+      [*mi2_dim, *mi2_dim, 4, 2],
+    ]

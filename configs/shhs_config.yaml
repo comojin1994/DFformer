@@ -1,0 +1,25 @@
+### PATH ###
+CKPT_PATH: "/opt/pytorch/DFformer/checkpoints"
+DB_PATH: "/opt/pytorch/DFformer/databases"
+WEIGHT_PATH: null
+WEIGHT_FILENAME: null
+
+### SETTING ###
+SEED: 42
+GPU_NUM: "0"
+num_workers: 6
+
+### DATASET ###
+db_name: "SHHS"
+num_classes: 5
+inter_information_length: 20 # epoch_length
+origin_ival: [0, 3000]
+seq_len: 3000
+
+### MANUAL ###
+EPOCHS: 30
+target_subject: 0
+target_session: null
+use_token: False
+apply_cls_head: True
+model_name: "dfformer"

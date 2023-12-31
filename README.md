@@ -10,7 +10,7 @@ TBA
 
 ![Alt text](docs/architecture.png)
 
-![model_animation](https://github.com/comojin1994/DFformer/assets/46745325/7c97de63-6710-41c5-b4cc-664090aac03f)
+![model_animation](https://github.com/comojin1994/DFformer/assets/46745325/2bcc00b5-872d-497e-8412-4efc1a756eb7)
 
 ## Abstract
 

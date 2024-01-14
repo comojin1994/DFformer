@@ -3,7 +3,7 @@
 This repository is the official implementations of DFformer in pytorch-lightning style:
 
 ```text
-TBA
+S.-J. Kim, D.-H. Lee, H.-G. Kwak, and S.-W. Lee, "Towards Domain-free Transformer for Generalized EEG Pre-training," IEEE Transactions on Neural Systems & Rehabilitation Engineering, 2024. (Accepted)
 ```
 
 ## Architecture

@@ -1,5 +1,9 @@
 # Towards Domain Free Transformer for Generalized EEG Pre-training
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=comojin1994/DFformer&type=Date)](https://www.star-history.com/#comojin1994/DFformer&Date)
+
 This repository is the official implementations of DFformer in pytorch-lightning style:
 
 ```text
